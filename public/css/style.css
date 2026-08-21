@@ -1,0 +1,380 @@
+/* Global body styling */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make the main container fill available space */
+.container {
+    flex: 1;
+}
+
+
+/* ==================== Navbar ==================== */
+
+/* Main navbar styling */
+.navbar {
+    min-height: 5rem;
+    height: auto;
+    background-color: white;
+}
+
+/* Navbar top row */
+.navbar-top {
+    display: flex;
+    align-items: center;
+}
+
+/* LuxeStay logo */
+.fa-person-walking-luggage {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #222 !important;
+}
+
+
+/* ==================== Search ==================== */
+
+/* Search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Search input */
+.search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    width: 300px;
+    outline: none;
+}
+
+/* Search input focus */
+.search-inp:focus {
+    border-color: #fe424d;
+    box-shadow: 0 0 0 0.2rem rgba(254, 66, 77, 0.25);
+}
+
+/* Search button */
+.search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* Search button hover effect */
+.search-btn:hover {
+    background-color: #e0353e;
+    color: #fff;
+}
+
+/* Search icon */
+.search-btn i {
+    font-size: 1rem;
+}
+
+
+/* ==================== Footer ==================== */
+
+/* Footer links */
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* Footer link hover */
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer sections */
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer social icons */
+.f-info-socials i {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+/* Footer container */
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+
+/* ==================== Listing Cards ==================== */
+
+/* Listing card */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+/* Listing card image */
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Card body */
+.card-body {
+    padding: 0 !important;
+}
+
+/* Card text */
+.card-text {
+    font-weight: 400 !important;
+}
+
+/* Listing link */
+.listing-link {
+    text-decoration: none;
+}
+
+
+/* ==================== Card Effect ==================== */
+
+/* Card image overlay */
+.card-img-overlay {
+    opacity: 0;
+}
+
+/* Card image overlay hover */
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+
+/* ==================== New Listing Page ==================== */
+
+/* Add listing button */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+/* ==================== Edit Listing Page ==================== */
+
+/* Edit listing button */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+/* ==================== Show Listing Page ==================== */
+
+/* Show listing image */
+.show-img {
+    height: 30vh;
+}
+
+/* Show page buttons */
+.btns {
+    display: flex;
+}
+
+/* Show page card */
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* ==================== Map ==================== */
+
+/* Map container */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* ==================== Filters ==================== */
+
+/* Filter container */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Individual filter */
+.filter {
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Filter hover */
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Filter text */
+.filter p {
+    font-size: 0.75rem;
+}
+
+/* Tax information */
+.tax-info {
+    display: none;
+}
+
+/* Tax toggle */
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ==================== Mobile Navbar ==================== */
+
+@media (max-width: 767px) {
+
+    /* Keep logo and hamburger on the same row */
+    .navbar-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Allow navbar to grow on mobile */
+    .navbar {
+        height: auto;
+        min-height: 5rem;
+    }
+
+    /* Put collapsed content below logo */
+    .navbar-collapse {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* Make navbar sections full width */
+    .navbar-nav {
+        width: 100%;
+    }
+
+    /* Explore link */
+    .navbar-nav:first-child {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Search form */
+    .search-form {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* Search input */
+    .search-inp {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Search button */
+    .search-btn {
+        flex-shrink: 0;
+    }
+
+    /* Right side links */
+    .navbar-links {
+        margin-top: 0.5rem;
+    }
+
+    /* Right side navbar links */
+    .navbar-links .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    /* Add spacing before filters */
+    #filters {
+        margin-top: 1rem;
+    }
+
+}
+
+
+/* ==================== Small Mobile Screens ==================== */
+
+@media (max-width: 450px) {
+
+    /* Stack search input and button */
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Full width search input */
+    .search-inp {
+        width: 100%;
+    }
+
+    /* Full width search button */
+    .search-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Give filters some spacing */
+    #filters {
+        margin-top: 1.5rem;
+    }
+
+    /* Reduce filter spacing */
+    .filter {
+        margin-right: 1.2rem;
+    }
+
+    /* Reduce tax toggle width */
+    .tax-toggle {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+}
